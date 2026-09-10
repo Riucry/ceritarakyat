@@ -1,0 +1,485 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #eeeeff,
+        #f8f8ff
+    );
+
+    min-height: 100vh;
+
+    padding: 25px 15px;
+
+    color: #333;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+    max-width: 560px;
+
+    margin: 0 auto 18px;
+
+    background: linear-gradient(
+        135deg,
+        #4569b3,
+        #506fbd
+    );
+
+    color: white;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.header-left h1 {
+    font-size: 23px;
+
+    margin-bottom: 8px;
+}
+
+
+.header-left p {
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   MUSIC BUTTON
+===================================================== */
+
+.music-button {
+    border: none;
+
+    background: #f58227;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    padding: 12px 16px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.music-button:hover {
+    transform: scale(1.05);
+
+    background: #e96f16;
+}
+
+
+.music-button.active {
+    background: #25a85a;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container {
+    max-width: 560px;
+
+    margin: auto;
+}
+
+
+/* =====================================================
+   STORY CARD
+===================================================== */
+
+.story-card {
+    background: white;
+
+    border-radius: 13px;
+
+    padding: 18px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.image-container {
+    width: 100%;
+
+    height: 300px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #ddd;
+
+    margin-bottom: 20px;
+}
+
+
+.image-container img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+#storyTitle {
+    text-align: center;
+
+    font-size: 27px;
+
+    color: #222;
+
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+#storyDescription {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    text-align: justify;
+
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   VOICE SECTION
+===================================================== */
+
+.voice-section {
+    border-top: 1px solid #eee;
+
+    padding-top: 18px;
+
+    margin-top: 10px;
+}
+
+
+.voice-section h3 {
+    text-align: center;
+
+    color: #3f66b2;
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+}
+
+
+.voice-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.voice-btn {
+    border: none;
+
+    color: white;
+
+    padding: 10px 14px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.voice-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.voice-btn.play {
+    background: #3f6fbd;
+}
+
+
+.voice-btn.pause {
+    background: #ed941d;
+}
+
+
+.voice-btn.resume {
+    background: #2ca65a;
+}
+
+
+.voice-btn.stop {
+    background: #dc4545;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navigation {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+
+.nav-btn {
+    flex: 1;
+
+    border: none;
+
+    color: white;
+
+    padding: 12px 8px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.nav-btn.previous {
+    background: #777;
+}
+
+
+.nav-btn.home {
+    background: #ed941d;
+}
+
+
+.nav-btn.next {
+    background: #3f6fbd;
+}
+
+
+/* =====================================================
+   MORAL
+===================================================== */
+
+.moral-box {
+    margin-top: 22px;
+
+    background: #f7f8fc;
+
+    border: 1px solid #e1e4ed;
+
+    border-radius: 10px;
+
+    padding: 18px;
+}
+
+
+.moral-box h3 {
+    color: #3f66b2;
+
+    margin-bottom: 8px;
+
+    font-size: 18px;
+}
+
+
+#moralText {
+    color: #555;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   DOTS
+===================================================== */
+
+.dots {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.dot {
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #ccc;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.dot.active {
+    background: #4569b3;
+
+    transform: scale(1.25);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+
+    .header {
+        padding: 15px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+
+    .header-left h1 {
+        font-size: 20px;
+    }
+
+
+    .music-button {
+        width: 100%;
+    }
+
+
+    .story-card {
+        padding: 14px;
+    }
+
+
+    .image-container {
+        height: 240px;
+    }
+
+
+    #storyTitle {
+        font-size: 23px;
+    }
+
+
+    #storyDescription {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .navigation {
+        flex-direction: column;
+    }
+
+
+    .nav-btn {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .image-container {
+        height: 210px;
+    }
+
+
+    .voice-btn {
+        width: 100%;
+    }
+
+}
